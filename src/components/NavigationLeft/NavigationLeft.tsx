@@ -1,21 +1,27 @@
-import { useState } from "react";
+"use client";
+
+import { usePathname } from "next/navigation";
 import { Tab } from "./Tab";
 import { container } from "./NavigationLeft.css";
 
-export type NavigationToptProps = {};
+export type NavigationLeftProps = {};
 
-export const NavigationLeft = (props: NavigationToptProps) => {
-  const [selected, setSelected] = useState(0);
+export const NavigationLeft = (props: NavigationLeftProps) => {
+  const pathname = usePathname();
 
   return (
     <div className={container}>
-      {["방문한 장소", "찜한 장소", "내정보"].map((text, key) => (
-        <Tab
-          key={key}
-          onClick={() => setSelected(key)}
-          selected={selected === key}
-          text={text}
-        />
+      {[
+        {
+          href: "/mypage",
+          text: "방문한 장소",
+        },
+        {
+          href: "/mypage/bookmark",
+          text: "찜한 장소",
+        },
+      ].map(({ href, text }, key) => (
+        <Tab key={key} href={href} selected={pathname === href} text={text} />
       ))}
     </div>
   );

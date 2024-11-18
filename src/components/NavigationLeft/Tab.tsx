@@ -1,21 +1,29 @@
 import { typos } from "@/styles/typos.css";
-import { TabVariants, tabRecipe } from "./Tab.css";
+import { tabStyle } from "./Tab.css";
 import { RightArrow } from "@/icons/RightArrow";
+import Link from "next/link";
+import { vars } from "@/styles/theme.css";
 
 export type TabProps = {
-  onClick: any;
+  href: string;
   selected: boolean;
   text: string;
 };
 
 export const Tab = (props: TabProps) => {
   return (
-    <div
-      className={tabRecipe({ state: props.selected ? "active" : "default" })}
-      onClick={props.onClick}
-    >
-      <span className={typos.label1}>{props.text}</span>
-      <RightArrow />
-    </div>
+    <Link href={props.href} className={tabStyle}>
+      <span
+        className={typos.label2}
+        style={{
+          color: props.selected ? vars.color.yellow : vars.color.white,
+        }}
+      >
+        {props.text}
+      </span>
+      <RightArrow
+        color={props.selected ? vars.color.yellow : vars.color.white}
+      />
+    </Link>
   );
 };

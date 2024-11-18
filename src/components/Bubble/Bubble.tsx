@@ -11,9 +11,9 @@ export const Bubble = (props: BubbleProps) => {
     <div
       className={`${bubbleRecipe({
         state: props.state,
-      })} ${typos.detail}`}
+      })} ${typos.body}`}
     >
-      <span style={{ fontWeight: "bolder" }}>{props.time} 방문자</span>
+      <span>{props.time} 방문자</span>
       <span>•</span>
       <span className={textContainer}>{props.text}</span>
     </div>

@@ -3,7 +3,7 @@ import { vars } from "@/styles/theme.css";
 
 export const container = style({
   width: "100%",
-  minWidth: 597,
+
   padding: "2rem",
 
   borderRadius: "1rem",
@@ -19,6 +19,7 @@ export const topContainer = style({
   display: "flex",
 
   alignItems: "center",
+  justifyContent: "space-between",
   gap: 20,
 });
 
@@ -37,7 +38,7 @@ export const titleContainer = style({
 });
 
 export const textContainer = style({
-  width: "100%",
+  width: "80%",
 
   display: "flex",
   flexDirection: "column",

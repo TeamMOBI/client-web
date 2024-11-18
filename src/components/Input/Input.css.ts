@@ -4,6 +4,7 @@ import { vars } from "@/styles/theme.css";
 
 export const container = style({
   width: "100%",
+  height: 48,
 
   display: "flex",
   flexDirection: "column",
@@ -25,7 +26,7 @@ export const labelContainer = style({
 export const inputBoxRecipe = recipe({
   base: {
     width: "100%",
-    height: 54,
+    height: 48,
     padding: "0.75rem 1rem",
 
     gap: 10,

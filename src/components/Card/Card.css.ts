@@ -3,9 +3,8 @@ import { vars } from "@/styles/theme.css";
 
 export const container = style({
   width: "100%",
-  minWidth: 597,
-  height: 146,
-  padding: "1.75rem 1.5em",
+  minWidth: "fit-content",
+  padding: "1.5rem 1.5em",
 
   borderRadius: "1rem",
   background: vars.color.gray_06,
@@ -16,11 +15,14 @@ export const container = style({
 });
 
 export const imageContainer = style({
-  width: 90,
-  height: 90,
+  width: 65,
+  height: 65,
 
   borderRadius: "0.5rem",
   background: vars.color.gray_05,
+
+  position: "relative",
+  overflow: "hidden",
 
   flexShrink: 0,
 });
@@ -31,7 +33,7 @@ export const textContainer = style({
   display: "flex",
   flexDirection: "column",
   justifyContent: "space-between",
-  gap: 4,
+  gap: "0.25rem",
 });
 
 export const titleContainer = style({

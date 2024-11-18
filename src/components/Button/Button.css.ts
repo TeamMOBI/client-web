@@ -3,10 +3,11 @@ import { vars } from "@/styles/theme.css";
 
 export const buttonRecipe = recipe({
   base: {
-    height: 52,
+    height: 48,
     borderRadius: "0.5rem",
 
     flexShrink: 0,
+    whiteSpace: "nowrap",
   },
   variants: {
     state: {
@@ -24,8 +25,8 @@ export const buttonRecipe = recipe({
       },
     },
     size: {
-      small: { padding: "0.5rem 1rem" },
-      medium: { padding: "1rem 1.75rem" },
+      small: { padding: "1rem 1rem" },
+      medium: { padding: "1rem 1.5rem" },
     },
   },
   defaultVariants: {

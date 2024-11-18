@@ -1,19 +1,23 @@
+"use client";
+
 import { buttonRecipe, ButtonVariants } from "./Button.css";
 import { typos } from "@/styles/typos.css";
 
-export type ButtonProps = ButtonVariants & {
-  text: string;
-};
+export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> &
+  ButtonVariants & {
+    text: string;
+  };
 
-export const Button = (props: ButtonProps) => {
+export const Button = ({ state, size, text, ...rest }: ButtonProps) => {
   return (
     <button
       className={`${buttonRecipe({
-        state: props.state,
-        size: props.size,
+        state: state,
+        size: size,
       })} ${typos.label2}`}
+      {...rest}
     >
-      {props.text}
+      {text}
     </button>
   );
 };

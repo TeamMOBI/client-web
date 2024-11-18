@@ -1,24 +1,8 @@
 import { createTheme, globalStyle } from "@vanilla-extract/css";
+import { colors } from "./colors";
 
 export const [themeClass, vars] = createTheme({
-  color: {
-    gray_03: "#b3b3b3",
-    gray_01: "#efefef",
-    gray_06: "#313131",
-    white: "#ffffff",
-    green: "#33c37e",
-    green_20: "#33c37e33",
-    red_20: "#e8424c33",
-    red: "#e8424c",
-    orange_20: "#e8884233",
-    orange: "#e88842",
-    yellow: "#e8ba42",
-    yellow_20: "#e8ba4233",
-    black: "#212121",
-    gray_04: "#656565",
-    gray_05: "#404040",
-    gray_02: "#d4d4d4",
-  },
+  color: colors,
   fonts: {
     title: {
       fontFamily:
@@ -31,7 +15,15 @@ export const [themeClass, vars] = createTheme({
     subtitle: {
       fontFamily:
         "Pretendard Variable, Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, Helvetica Neue, Segoe UI, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, sans-serif",
-      fontSize: "1.5rem",
+      fontSize: "1.35rem",
+      fontWeight: "500",
+      lineHeight: "160%",
+      letterSpacing: "-0.4px",
+    },
+    subtitle2: {
+      fontFamily:
+        "Pretendard Variable, Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, Helvetica Neue, Segoe UI, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, sans-serif",
+      fontSize: "1.25rem",
       fontWeight: "500",
       lineHeight: "160%",
       letterSpacing: "-0.4px",
@@ -39,7 +31,7 @@ export const [themeClass, vars] = createTheme({
     body: {
       fontFamily:
         "Pretendard Variable, Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, Helvetica Neue, Segoe UI, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, sans-serif",
-      fontSize: "1.25rem",
+      fontSize: "1rem",
       fontWeight: "400",
       lineHeight: "160%",
       letterSpacing: "-0.4px",
@@ -47,7 +39,7 @@ export const [themeClass, vars] = createTheme({
     detail: {
       fontFamily:
         "Pretendard Variable, Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, Helvetica Neue, Segoe UI, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, sans-serif",
-      fontSize: "1rem",
+      fontSize: "0.75rem",
       fontWeight: "400",
       lineHeight: "140%",
       letterSpacing: "-0.32px",
@@ -55,7 +47,7 @@ export const [themeClass, vars] = createTheme({
     label1: {
       fontFamily:
         "Pretendard Variable, Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, Helvetica Neue, Segoe UI, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, sans-serif",
-      fontSize: "1.25rem",
+      fontSize: "1.1rem",
       fontWeight: "400",
       lineHeight: "160%",
       letterSpacing: "-0.4px",
@@ -63,7 +55,7 @@ export const [themeClass, vars] = createTheme({
     label2: {
       fontFamily:
         "Pretendard Variable, Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, Helvetica Neue, Segoe UI, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, sans-serif",
-      fontSize: "1.125rem",
+      fontSize: "1rem",
       fontWeight: "500",
       lineHeight: "110%",
       letterSpacing: "-0.4px",
@@ -71,7 +63,7 @@ export const [themeClass, vars] = createTheme({
     label3: {
       fontFamily:
         "Pretendard Variable, Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, Helvetica Neue, Segoe UI, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, sans-serif",
-      fontSize: "1rem",
+      fontSize: "0.8rem",
       fontWeight: "400",
       lineHeight: "110%",
       letterSpacing: "-0.4px",

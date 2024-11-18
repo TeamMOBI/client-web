@@ -12,7 +12,7 @@ export const tagRecipe = recipe({
   },
   variants: {
     size: {
-      small: { padding: "0.5rem 0.75rem" },
+      small: { padding: "0.4rem 0.5rem" },
       medium: { padding: "1rem 1.75rem" },
     },
   },

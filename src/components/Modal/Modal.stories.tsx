@@ -20,6 +20,7 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     title: "방문 기록",
-    text: "도보 이동이 자유로워요.",
+    children: <Input icon={false} />,
+    button: <Button text="알겠어요." />,
   },
 };

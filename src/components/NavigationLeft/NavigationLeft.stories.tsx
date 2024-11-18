@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { NavigationLeft, NavigationToptProps } from "./NavigationLeft";
+import { NavigationLeft, NavigationLeftProps } from "./NavigationLeft";
 
 const meta = {
   title: "Example/NavigationLeft",
@@ -18,7 +18,7 @@ const meta = {
     },
   },
   tags: ["autodocs"],
-} satisfies Meta<NavigationToptProps>;
+} satisfies Meta<NavigationLeftProps>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

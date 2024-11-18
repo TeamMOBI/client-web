@@ -1,17 +1,16 @@
 import { figureRecipe, FigureVariants } from "./Figure.css";
 import { typos } from "@/styles/typos.css";
+import type { Degree } from "@/types/entity";
 
-type degree = "여유" | "보통" | "약간 붐빔" | "붐빔";
-
-export type FigureProps = FigureVariants & {
-  text: degree;
+export type FigureProps = {
+  text: Degree;
 };
 
 export const Figure = (props: FigureProps) => {
   return (
     <div
       className={`${figureRecipe({
-        state: props.state,
+        state: props.text,
       })} ${typos.label2}`}
     >
       {props.text}

@@ -1,5 +1,5 @@
-import { style } from '@vanilla-extract/css';
-import { vars } from '@/styles/theme.css';
+import { style } from "@vanilla-extract/css";
+import { vars } from "@/styles/theme.css";
 
 export const typos = {
   title: style({
@@ -15,6 +15,13 @@ export const typos = {
     fontSize: vars.fonts.subtitle.fontSize,
     lineHeight: vars.fonts.subtitle.lineHeight,
     letterSpacing: vars.fonts.subtitle.letterSpacing,
+  }),
+  subtitle2: style({
+    fontFamily: vars.fonts.subtitle2.fontFamily,
+    fontWeight: vars.fonts.subtitle2.fontWeight,
+    fontSize: vars.fonts.subtitle2.fontSize,
+    lineHeight: vars.fonts.subtitle2.lineHeight,
+    letterSpacing: vars.fonts.subtitle2.letterSpacing,
   }),
   body: style({
     fontFamily: vars.fonts.body.fontFamily,

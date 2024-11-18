@@ -3,34 +3,33 @@ import { vars } from "@/styles/theme.css";
 
 export const figureRecipe = recipe({
   base: {
-    height: 50,
-    padding: "1rem 1.25rem",
+    padding: "0.9rem 1.25rem",
     borderRadius: "0.75rem",
 
     flexShrink: 0,
   },
   variants: {
     state: {
-      first: {
+      여유: {
         background: vars.color.green_20,
         color: vars.color.green,
       },
-      second: {
+      보통: {
         background: vars.color.yellow_20,
         color: vars.color.yellow,
       },
-      third: {
+      "약간 붐빔": {
         background: vars.color.orange_20,
         color: vars.color.orange,
       },
-      forth: {
+      붐빔: {
         background: vars.color.red_20,
         color: vars.color.red,
       },
     },
   },
   defaultVariants: {
-    state: "first",
+    state: "여유",
   },
 });
 

@@ -4,6 +4,7 @@ import { style } from "@vanilla-extract/css";
 
 export const bubbleRecipe = recipe({
   base: {
+    width: "max-content",
     padding: "0.75rem 1.25rem",
 
     borderRadius: "0.5rem",

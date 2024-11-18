@@ -1,15 +1,15 @@
-export const RightArrow = () => {
+export const RightArrow = ({ color = "#EFEFEF" }: { color?: string }) => {
   return (
     <svg
-      width="28"
-      height="28"
-      viewBox="0 0 28 28"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M10.5 5.83331L18.6667 14L10.5 22.1666"
-        stroke="#EFEFEF"
+        d="M9 5L16 12L9 19"
+        stroke={color}
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
